@@ -32,13 +32,6 @@ class Home extends Component {
     return (
       <ApolloProvider client={client}>
         <div className="container">
-          
-          {
-            !isAuthenticated() && (
-              <section style={ sectionStyle }>
-              </section>
-            )
-          }
           {
             isAuthenticated() && (
                 <div>
